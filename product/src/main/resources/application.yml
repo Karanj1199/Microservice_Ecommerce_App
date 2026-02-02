@@ -2,16 +2,19 @@ spring:
   application:
     name: product-service
   datasource:
-#    url: jdbc:postgresql://localhost:5432/product
-    url: jdbc:postgresql://ep-proud-tree-ah9c7qo6-pooler.c-3.us-east-1.aws.neon.tech/product?sslmode=require&channel_binding=require
-    username: neondb_owner
-    password: npg_9Upm5qRaFDOH
+    url: jdbc:postgresql://localhost:5432/product
+#    url: jdbc:mysql://localhost:3307/karan
+    username: karan
+    password: karan
   jpa:
     database: POSTGRESQL
     show-sql: true
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        format_sql: true
 
 #  h2:
 #    console:

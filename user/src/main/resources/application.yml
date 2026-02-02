@@ -3,8 +3,8 @@ spring:
     name: user-service
   data:
     mongodb:
-      uri: mongodb+srv://karanpatel7875_db_user:mECP95arVu9ip4Jr@user-data.ukbz5lb.mongodb.net/userdb?appName=user-data
-#      database: userdb
+      uri: mongodb://localhost:27017/ecom_user
+#      database: ecom_user
 #  datasource:
 #    url: jdbc:postgresql://localhost:5432/userdb
 #    username: karan
