@@ -1,16 +1,8 @@
 spring:
   application:
     name: order-service
-  datasource:
-    url: jdbc:postgresql://localhost:5432/order
-    username: karan
-    password: karan
-  jpa:
-    database: POSTGRESQL
-    show-sql: true
-    hibernate:
-      ddl-auto: update
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  config:
+    import: optional:configserver:http://localhost:8888
 
 #  h2:
 #    console:
@@ -22,6 +14,3 @@ spring:
 #    hibernate:
 #      ddl-auto: create
 
-
-server:
-  port: 8083
